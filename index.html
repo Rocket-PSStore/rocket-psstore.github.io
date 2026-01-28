@@ -3,6 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Coming Soon | Rocket Applications Inc.</title>
+    <script type="module" src="https://unpkg.com/deep-chat@2.1.1/dist/deepChat.bundle.js"></script>
+
+    <style>
+        /* This makes the chat bubble sit pretty in the corner */
+        .chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+        }
+
+        /* Responsive sizing for mobile */
+        deep-chat {
+            width: 350px;
+            height: 500px;
+            background-color: #ffffff;
+        }
+
+        @media (max-width: 480px) {
+            deep-chat {
+                width: calc(100vw - 40px);
+                height: 70vh;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Coming soon...</h1>
@@ -14,14 +40,22 @@
         </ul>
     </section>
     
-    <script
-    src="https://app.wonderchat.io/scripts/wonderchat.js"
-    data-name="wonderchat"
-    data-address="app.wonderchat.io"
-    data-id="cmfh0q6kf00e2xa6za9wqawei"
-    data-widget-size="normal"
-    data-widget-button-size="normal"
-    defer
-  ></script>
+    <div class="chat-container">
+        <deep-chat
+            request='{
+                "url": "https://rocketpsstorechatbot.rtx3080ti0415.workers.dev",
+                "method": "POST"
+            }'
+            introMessage='{"text": "Hey! I am your AI assistant. How can I help you today?"}'
+            messageStyles='{
+                "default": {
+                    "ai": {"bubble": {"backgroundColor": "#f0f0f0", "color": "black"}},
+                    "user": {"bubble": {"backgroundColor": "#007bff", "color": "white"}}
+                }
+            }'
+            textInput='{"placeholder": {"text": "Type your question..."}}'
+            submitButtonStyles='{"submit": {"container": {"default": {"backgroundColor": "#007bff"}}}}'
+        ></deep-chat>
+    </div>
 </body>
 </html>
