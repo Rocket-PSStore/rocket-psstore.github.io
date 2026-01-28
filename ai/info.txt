@@ -1,0 +1,9 @@
+Rocket PSStore is a free and modern app store powered by F-Droid, designed to provide users with a richer and more advanced experience than the standard F-Droid client. While it maintains access to F-Droid’s trusted app ecosystem, Rocket PSStore enhances it with additional features, improved usability, and a more polished interface.
+
+One of Rocket PSStore’s standout features is its expanded functionality that is not available in the original F-Droid client. These improvements are focused on better app discovery, smoother performance, and a more user-friendly experience overall. The app is built with both casual users and developers in mind, ensuring ease of use without sacrificing flexibility or power.
+
+Rocket PSStore also includes an easy-to-integrate Game Center. This feature allows developers to seamlessly add their games to the platform while giving users a dedicated space to discover, browse, and enjoy games. The Game Center helps centralize gaming content and makes it easier for users to find new experiences without leaving the app.
+
+In addition to its core features, Rocket PSStore supports ongoing development and improvement through optional data collection. The app may collect certain user data, but participation is entirely optional. Users can opt out of data tracking at any time through the app’s settings. Any collected data is used strictly for personalized advertising and for improving the app’s performance, features, and overall user experience.
+
+Rocket PSStore places a strong emphasis on transparency, user control, and choice. Users are always informed and remain in full control of their data preferences. By combining the openness of F-Droid with modern features and thoughtful design, Rocket PSStore aims to deliver a powerful, flexible, and user-friendly alternative app store experience.
