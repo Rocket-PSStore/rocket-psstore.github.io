@@ -2,62 +2,214 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Coming Soon | Rocket Applications Inc.</title>
-    <script type="module" src="https://unpkg.com/deep-chat@2.1.1/dist/deepChat.bundle.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Store | Efficient F-Droid Client</title>
     <style>
-        /* This makes the chat bubble sit pretty in the corner */
-        .chat-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+        :root {
+            --fd-blue: #3f51b5;
+            --fd-blue-dark: #303f9f;
+            --fd-gray: #f8f9fa;
+            --text-dark: #212121;
+            --text-secondary: #5f6368;
         }
 
-        /* Responsive sizing for mobile */
-        deep-chat {
-            width: 350px;
-            height: 500px;
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
             background-color: #ffffff;
+            color: var(--text-dark);
+            line-height: 1.6;
         }
 
-        @media (max-width: 480px) {
-            deep-chat {
-                width: calc(100vw - 40px);
-                height: 70vh;
-            }
+        header {
+            background-color: var(--fd-blue);
+            color: white;
+            padding: 80px 20px 120px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .app-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        .main-card {
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            margin-top: -80px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background: var(--fd-blue);
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(63, 81, 181, 0.2);
+        }
+
+        .btn-download:hover {
+            background: var(--fd-blue-dark);
+            transform: translateY(-1px);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin: 80px 0;
+        }
+
+        .info-item h3 {
+            color: var(--fd-blue);
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        .legal-links {
+            background: var(--fd-gray);
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .legal-links a {
+            color: var(--fd-blue);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .legal-links a:hover {
+            text-decoration: underline;
+        }
+
+        .repo-section {
+            border: 2px solid var(--fd-gray);
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 60px;
+        }
+
+        .repo-link {
+            display: inline-block;
+            background: #ffffff;
+            border: 1px solid #dcdcdc;
+            padding: 12px 20px;
+            font-family: monospace;
+            margin: 15px 0;
+            font-weight: bold;
+            color: var(--fd-blue);
+            word-break: break-all;
+        }
+
+        footer {
+            background: #212121;
+            padding: 60px 20px;
+            text-align: center;
+            color: #ccc;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <h1>Coming soon...</h1>
-    <section>
-        <p><h3>Links:</h3></p>
-        <ul>
-            <li><a href="/privacy.html">Privacy Policy</a></li>
-            <li><a href="/tos.html">Terms of Service</a></li>
-            <li><a href="https://freeplayzone-4fefc.web.app/"/>FreePlayZone</a></li>
-        </ul>
-    </section>
-    
-    <div class="chat-container">
-        <deep-chat
-            connect='{
-                "url": "https://rocketpsstorechatbot.rtx3080ti0415.workers.dev",
-                "method": "POST"
-            }'
-            demo="false"
-            introMessage='{"text": "Hey! I am your AI assistant. How can I help you today?"}'
-            messageStyles='{
-                "default": {
-                    "ai": {"bubble": {"backgroundColor": "#f0f0f0", "color": "black"}},
-                    "user": {"bubble": {"backgroundColor": "#007bff", "color": "white"}}
-                }
-            }'
-            textInput='{"placeholder": {"text": "Type your question..."}}'
-            submitButtonStyles='{"submit": {"container": {"default": {"backgroundColor": "#007bff"}}}}'
-        ></deep-chat>
+
+<header>
+    <div class="container hero">
+        <img src="https://avatars.githubusercontent.com/u/220479010?s=200&v=4" alt="Rocket Store Logo" class="app-logo">
+        <h1>Rocket Store</h1>
+        <p>The streamlined client for F-Droid repositories.</p>
     </div>
+</header>
+
+<div class="container">
+    <section class="main-card">
+        <h2>Native Performance. Open Repositories.</h2>
+        <p>Rocket Store provides a high-performance, responsive interface for managing applications from any F-Droid compatible source.</p>
+        <div style="margin: 30px 0;">
+            <a href="https://rocketpsstore.qzz.io/rocket-store.apk" class="btn-download">DOWNLOAD APK</a>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary);">
+            Compatible with Android 5.0 and above.
+        </p>
+    </section>
+
+    <div class="info-grid">
+        <div class="info-item">
+            <h3>Blazing Fast</h3>
+            <p>Built for efficiency. Experience instantaneous repository syncing and lightning-fast search results.</p>
+        </div>
+        <div class="info-item">
+            <h3>Universal Support</h3>
+            <p>Connect to any F-Droid repository via URL. Manage your favorite collections in one place.</p>
+        </div>
+        <div class="info-item">
+            <h3>Reliable Downloads</h3>
+            <p>Direct APK installation with built-in version management and easy updates for all your apps.</p>
+        </div>
+    </div>
+
+    <section class="repo-section">
+        <h3>Connect Your Repository</h3>
+        <p>Rocket Store works best with our official repository, but you can add your own at any time:</p>
+        <div class="repo-link">https://rocketpsstore.qzz.io/fdroid/repo</div>
+    </section>
+
+    <section class="legal-links">
+        <h3>Trust & Transparency</h3>
+        <p>Your privacy is important to us. Review our policies below:</p>
+        <a href="https://rocketpsstore.qzz.io/privacy.html">Privacy Policy</a>
+        <a href="https://rocketpsstore.qzz.io/tos.html">Terms of Service</a>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <p>Rocket Store is an independent application client.</p>
+        <p>
+            <a href="https://rocketpsstore.qzz.io/privacy.html">Privacy</a> | 
+            <a href="https://rocketpsstore.qzz.io/tos.html">Terms</a>
+        </p>
+        <p style="margin-top:20px;">&copy; 2026 Rocket Store Project</p>
+    </div>
+</footer>
+
 </body>
 </html>
