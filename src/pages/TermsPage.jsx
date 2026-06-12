@@ -10,7 +10,7 @@ export default function TermsPage() {
         <h1>Terms of Service</h1>
         <p><strong>Effective Date:</strong> July 15, 2025</p>
 
-        <p><strong>Rocket Applications Inc.</strong> ("we", "us", or "our") operates the mobile application linked to <a href="https://rocket-psstore.github.io/" target="_blank" rel="noopener noreferrer">https://rocket-psstore.github.io/</a> (the "App"). These Terms of Service outline the rules and expectations for using our services.</p>
+        <p><strong>Rocket Applications Inc.</strong> ("we", "us", or "our") operates the mobile application linked to <a href="https://rocketpsstore.qzz.io/" target="_blank" rel="noopener noreferrer">https://rocketpsstore.qzz.io/</a> (the "App"). These Terms of Service outline the rules and expectations for using our services.</p>
 
         <h2>1. Account Eligibility</h2>
         <p>You must be at least 13 years old to use our services. By creating an account, you confirm that you meet this age requirement and agree to comply with these terms.</p>
@@ -54,7 +54,7 @@ export default function TermsPage() {
         <p>We reserve the right to modify or discontinue parts of the App with or without notice. Features may change over time based on updates or internal decisions.</p>
 
         <h2>9. Privacy Policy</h2>
-        <p>Your use of the App is also governed by our <a href="/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>, which explains how we collect, use, and protect your data.</p>
+        <p>Your use of the App is also governed by our <a href="/#/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>, which explains how we collect, use, and protect your data.</p>
 
         <h2>10. Termination</h2>
         <p>We may suspend or terminate your account at our sole discretion if we believe you have violated these terms or engaged in harmful activity.</p>

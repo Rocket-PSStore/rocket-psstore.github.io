@@ -10,7 +10,7 @@ export default function PrivacyPage() {
         <h1>Privacy Policy</h1>
         <p><strong>Effective Date:</strong> 15 July, 2025</p>
 
-        <p><strong>Rocket Applications Inc.</strong> ("we", "us", or "our") operates the mobile application linked to <a href="https://rocket-psstore.github.io/" target="_blank" rel="noopener noreferrer">https://rocket-psstore.github.io/</a> (the "App"). This Privacy Policy explains how we collect, use, and share information from users of the App.</p>
+        <p><strong>Rocket Applications Inc.</strong> ("we", "us", or "our") operates the mobile application linked to <a href="https://rocketpsstore.qzz.io/" target="_blank" rel="noopener noreferrer">https://rocketpsstore.qzz.io/</a> (the "App"). This Privacy Policy explains how we collect, use, and share information from users of the App.</p>
 
         <h2>1. Information We Collect</h2>
         <p>We collect the following information from users of our App:</p>

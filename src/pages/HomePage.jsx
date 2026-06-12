@@ -43,8 +43,8 @@ export default function HomePage() {
         <section className="legal-links">
           <h3>Trust & Transparency</h3>
           <p>Your privacy is important to us. Review our policies below:</p>
-          <a href="/privacy.html">Privacy Policy</a>
-          <a href="/tos.html">Terms of Service</a>
+          <a href="/#/privacy">Privacy Policy</a>
+          <a href="/#/tos">Terms of Service</a>
         </section>
       </div>
 
