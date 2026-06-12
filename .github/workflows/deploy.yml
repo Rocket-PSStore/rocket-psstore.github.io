@@ -45,6 +45,7 @@ jobs:
           cp -r dist/* .
           cp dist/.nojekyll .nojekyll 2>/dev/null || true
           cp public/CNAME CNAME 2>/dev/null || true
+          cp public/404.html 404.html 2>/dev/null || true
           
           # Commit and push
           git add .

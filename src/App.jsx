@@ -5,7 +5,7 @@ import TermsPage from './pages/TermsPage'
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL || '/'}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/privacy.html" element={<PrivacyPage />} />
