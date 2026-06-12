@@ -1,0 +1,53 @@
+.legal-container {
+  background: #f9f9f9;
+  padding: 40px 24px;
+  border-radius: 8px;
+  margin: 40px auto;
+}
+
+.legal-container h1 {
+  color: #111;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.legal-container h2 {
+  color: #111;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.legal-container h3 {
+  color: #111;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.legal-container p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.legal-container ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.legal-container li {
+  margin-bottom: 8px;
+}
+
+.legal-container a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.legal-container a:hover {
+  text-decoration: underline;
+}
+
+.legal-container strong {
+  color: #111;
+}

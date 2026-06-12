@@ -1,0 +1,32 @@
+:root {
+  --fd-blue: #3f51b5;
+  --fd-blue-dark: #303f9f;
+  --fd-gray: #f8f9fa;
+  --text-dark: #212121;
+  --text-secondary: #5f6368;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Google Tag Manager */

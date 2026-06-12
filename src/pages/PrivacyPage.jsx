@@ -1,0 +1,75 @@
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import './LegalPage.css'
+
+export default function PrivacyPage() {
+  return (
+    <div>
+      <Header />
+      <div className="container legal-container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> 15 July, 2025</p>
+
+        <p><strong>Rocket Applications Inc.</strong> ("we", "us", or "our") operates the mobile application linked to <a href="https://rocket-psstore.github.io/" target="_blank" rel="noopener noreferrer">https://rocket-psstore.github.io/</a> (the "App"). This Privacy Policy explains how we collect, use, and share information from users of the App.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>We collect the following information from users of our App:</p>
+        <ul>
+          <li>IP Address</li>
+          <li>Location Data (based on device permissions)</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>We use the collected information to:</p>
+        <ul>
+          <li>Monitor and analyze usage and trends to improve user experience</li>
+          <li>Serve personalized or location-based advertisements</li>
+          <li>Ensure technical functionality and security of the App</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+        <p>We use the following third-party services that may collect and process your data:</p>
+
+        <h3>● Google Analytics</h3>
+        <p>Used to analyze usage patterns and improve our App. Google may collect your IP address and other usage data.<br/>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">View Google Privacy Policy</a></p>
+
+        <h3>● Start.io</h3>
+        <p>Used for mobile advertising and monetization. Start.io may collect device identifiers, location, and IP address.<br/>
+        <a href="https://www.start.io/policy/privacy-policy/" target="_blank" rel="noopener noreferrer">View Start.io Privacy Policy</a></p>
+
+        <h2>4. Advertising</h2>
+        <p>We work with advertising partners, including Start.io, to display ads within our App. These partners may use IP address and device location to serve relevant ads. You can manage ad preferences or opt out via your device settings.</p>
+
+        <h2>5. Data Sharing</h2>
+        <p>We do <strong>not sell</strong> your personal data. We may share data with trusted service providers and partners (e.g., analytics and ad networks) strictly for the purposes outlined above.</p>
+
+        <h2>6. International Users</h2>
+        <p>If you are located in the European Economic Area (EEA), California, or other regions with data protection laws, we process your data in compliance with applicable regulations (e.g., GDPR, CCPA).</p>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access the personal data we hold about you</li>
+          <li>Request correction or deletion of your data</li>
+          <li>Withdraw consent to data collection (e.g., through your device settings)</li>
+        </ul>
+
+        <h2>7. Data Retention</h2>
+        <p>We retain your data only as long as necessary for the purposes described in this policy, unless a longer retention period is required by law.</p>
+
+        <h2>8. Security</h2>
+        <p>We implement reasonable security measures to protect your data. However, no method of transmission over the internet is 100% secure.</p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>Our App is <strong>not intended for children under the age of 13</strong>, and we do not knowingly collect data from such users.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>If you have questions or concerns about this Privacy Policy, contact us at:<br/>
+        📧 <a href="mailto:support@rocketpsstore.qzz.io">support@rocketpsstore.qzz.io</a></p>
+
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.</p>
+      </div>
+      <Footer />
+    </div>
+  )
+}
