@@ -40,6 +40,12 @@ export default function HomePage() {
           <div className="repo-link">https://rocketpsstore.qzz.io/fdroid/repo</div>
         </section>
 
+        <section className="repo-section">
+          <h3>Try Rocket Linux</h3>
+          <p>Discover Rocket Linux, a very fast GNU/Linux distro based on Debian with a polished GNOME desktop.</p>
+          <a href="/#/rocket-linux" className="btn-download">Explore Rocket Linux</a>
+        </section>
+
         <section className="legal-links">
           <h3>Trust & Transparency</h3>
           <p>Your privacy is important to us. Review our policies below:</p>

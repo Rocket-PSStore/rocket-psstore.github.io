@@ -9,7 +9,9 @@ export default function Header() {
           alt="Rocket PSStore Logo - Open Source Android App Client" 
           className="app-logo"
         />
-        <h1>Rocket PSStore</h1>
+        <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <h1>Rocket PSStore</h1>
+        </a>
         <p>The streamlined client for F-Droid repositories.</p>
       </div>
     </header>
