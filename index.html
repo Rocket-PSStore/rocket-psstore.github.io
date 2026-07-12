@@ -70,5 +70,29 @@
     <script src="https://pl30248432.effectivecpmnetwork.com/d9/b2/cc/d9b2ccd972944a96abf386ceef2e5aa7.js"></script>
     <script src="https://rocketanalytics.rtx3080ti0415.workers.dev/15a20d86df597f9b2cd041e98e5b4b7f.js"></script>
     <script src="https://analytics.rocketpsstore.qzz.io/full.js"></script>
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAAdKuAdM7L-daR1VBFg3qy5uttNYjgl2Y",
+      authDomain: "rocket-store-f522c.firebaseapp.com",
+      databaseURL: "https://rocket-store-f522c-default-rtdb.firebaseio.com",
+      projectId: "rocket-store-f522c",
+      storageBucket: "rocket-store-f522c.firebasestorage.app",
+      messagingSenderId: "623796013133",
+      appId: "1:623796013133:web:672413da0a239649bfb404",
+      measurementId: "G-BTWL9X990S"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   </body>
 </html>
